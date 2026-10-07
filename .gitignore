@@ -14,7 +14,8 @@ checkpoints/
 output_figures/
 run_all.out
 
-frlinear_*
+*.tgz
+*.patch
 FRLinear_output/
 
 results_json/
