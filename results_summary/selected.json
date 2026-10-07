@@ -1,0 +1,146 @@
+{
+  "ETTh1": {
+    "n_regimes": 1,
+    "norm": "none",
+    "val_mean": 0.9370719889799753,
+    "best_val_config": [
+      1,
+      "none"
+    ],
+    "threshold": 0.9399381468163106,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "ETTh2": {
+    "n_regimes": 1,
+    "norm": "last",
+    "val_mean": 0.35702858741084736,
+    "best_val_config": [
+      1,
+      "last"
+    ],
+    "threshold": 0.3572452351469574,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "ETTm1": {
+    "n_regimes": 2,
+    "norm": "none",
+    "val_mean": 0.5784826278686523,
+    "best_val_config": [
+      2,
+      "none"
+    ],
+    "threshold": 0.5797704631908045,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "ETTm2": {
+    "n_regimes": 1,
+    "norm": "last",
+    "val_mean": 0.18325573081771532,
+    "best_val_config": [
+      3,
+      "last"
+    ],
+    "threshold": 0.1832723253212071,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "ILI": {
+    "n_regimes": 2,
+    "norm": "last",
+    "val_mean": 0.23515268291036287,
+    "best_val_config": [
+      2,
+      "last"
+    ],
+    "threshold": 0.23743387252973278,
+    "horizons": [
+      24,
+      36,
+      48,
+      60
+    ]
+  },
+  "Exchange": {
+    "n_regimes": 1,
+    "norm": "last",
+    "val_mean": 0.45492074514428776,
+    "best_val_config": [
+      1,
+      "last"
+    ],
+    "threshold": 0.4556287673963921,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "Weather": {
+    "n_regimes": 3,
+    "norm": "none",
+    "val_mean": 0.4768841564655304,
+    "best_val_config": [
+      3,
+      "none"
+    ],
+    "threshold": 0.4769576798814587,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "Electricity": {
+    "n_regimes": 2,
+    "norm": "none",
+    "val_mean": 0.13947616796940565,
+    "best_val_config": [
+      2,
+      "none"
+    ],
+    "threshold": 0.13948784954845905,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  },
+  "Traffic": {
+    "n_regimes": 2,
+    "norm": "last",
+    "val_mean": 0.35728488117456436,
+    "best_val_config": [
+      3,
+      "last"
+    ],
+    "threshold": 0.35731958597898483,
+    "horizons": [
+      96,
+      192,
+      336,
+      720
+    ]
+  }
+}

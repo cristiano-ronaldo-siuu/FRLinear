@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{Ablation study: MSE averaged over horizons (mean$\pm$std). $k$ variants and random grouping use the selected normalisation; Fixed MA-25 replaces the adaptive kernel bank at the selected $k$; the last column flips the normalisation at the selected $k$. $^\dagger$ marks the selected $k$.}
+\label{tab:ablation_mse}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l|ccccccccc}
+\toprule
+Dataset & DLinear & NLinear & k=1 & k=2 & k=3 & Random k=2 & Random k=3 & Fixed MA-25 & Norm flipped \\
+\midrule
+ETTh1 & 0.433{\scriptsize$\pm$0.004} & \underline{0.413}{\scriptsize$\pm$0.002} & 0.444{\scriptsize$\pm$0.012}$^\dagger$ & 0.442{\scriptsize$\pm$0.010} & 0.440{\scriptsize$\pm$0.004} & 0.441{\scriptsize$\pm$0.019} & 0.431{\scriptsize$\pm$0.004} & 0.433{\scriptsize$\pm$0.004} & \textbf{0.412}{\scriptsize$\pm$0.002} \\
+ETTh2 & 0.453{\scriptsize$\pm$0.018} & 0.353{\scriptsize$\pm$0.010} & 0.349{\scriptsize$\pm$0.004}$^\dagger$ & \textbf{0.344}{\scriptsize$\pm$0.001} & 0.354{\scriptsize$\pm$0.007} & 0.355{\scriptsize$\pm$0.005} & 0.355{\scriptsize$\pm$0.008} & \underline{0.347}{\scriptsize$\pm$0.001} & 0.448{\scriptsize$\pm$0.024} \\
+ETTm1 & 0.360{\scriptsize$\pm$0.002} & 0.367{\scriptsize$\pm$0.002} & 0.360{\scriptsize$\pm$0.002} & \textbf{0.356}{\scriptsize$\pm$0.000}$^\dagger$ & \textbf{0.356}{\scriptsize$\pm$0.000} & 0.358{\scriptsize$\pm$0.002} & 0.358{\scriptsize$\pm$0.003} & \underline{0.357}{\scriptsize$\pm$0.000} & 0.362{\scriptsize$\pm$0.003} \\
+ETTm2 & 0.283{\scriptsize$\pm$0.011} & 0.258{\scriptsize$\pm$0.001} & \underline{0.257}{\scriptsize$\pm$0.000}$^\dagger$ & \underline{0.257}{\scriptsize$\pm$0.000} & \textbf{0.256}{\scriptsize$\pm$0.000} & \underline{0.257}{\scriptsize$\pm$0.000} & \underline{0.257}{\scriptsize$\pm$0.000} & \textbf{0.256}{\scriptsize$\pm$0.000} & 0.283{\scriptsize$\pm$0.010} \\
+ILI & 2.307{\scriptsize$\pm$0.035} & 1.989{\scriptsize$\pm$0.015} & 1.944{\scriptsize$\pm$0.014} & \underline{1.939}{\scriptsize$\pm$0.017}$^\dagger$ & 1.983{\scriptsize$\pm$0.012} & 1.946{\scriptsize$\pm$0.041} & \textbf{1.934}{\scriptsize$\pm$0.022} & 1.956{\scriptsize$\pm$0.021} & 2.311{\scriptsize$\pm$0.001} \\
+Exchange & \textbf{0.383}{\scriptsize$\pm$0.013} & \underline{0.386}{\scriptsize$\pm$0.001} & 0.397{\scriptsize$\pm$0.003}$^\dagger$ & 0.408{\scriptsize$\pm$0.006} & 0.411{\scriptsize$\pm$0.005} & 0.401{\scriptsize$\pm$0.018} & 0.400{\scriptsize$\pm$0.008} & 0.396{\scriptsize$\pm$0.003} & 0.389{\scriptsize$\pm$0.016} \\
+Weather & 0.245{\scriptsize$\pm$0.001} & 0.253{\scriptsize$\pm$0.000} & 0.245{\scriptsize$\pm$0.002} & 0.241{\scriptsize$\pm$0.000} & \underline{0.229}{\scriptsize$\pm$0.000}$^\dagger$ & 0.243{\scriptsize$\pm$0.002} & 0.241{\scriptsize$\pm$0.003} & \underline{0.229}{\scriptsize$\pm$0.000} & \textbf{0.226}{\scriptsize$\pm$0.000} \\
+Electricity & 0.167{\scriptsize$\pm$0.000} & 0.170{\scriptsize$\pm$0.000} & \underline{0.166}{\scriptsize$\pm$0.000} & \textbf{0.165}{\scriptsize$\pm$0.000}$^\dagger$ & \textbf{0.165}{\scriptsize$\pm$0.000} & \underline{0.166}{\scriptsize$\pm$0.000} & \underline{0.166}{\scriptsize$\pm$0.000} & \textbf{0.165}{\scriptsize$\pm$0.000} & 0.167{\scriptsize$\pm$0.000} \\
+Traffic & \underline{0.434}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000}$^\dagger$ & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000} & \underline{0.434}{\scriptsize$\pm$0.000} \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

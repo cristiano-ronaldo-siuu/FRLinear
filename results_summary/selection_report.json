@@ -1,0 +1,398 @@
+{
+  "ETTh1": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 1.0399281531572342,
+      "val_se": 0.0005304092134426833,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.9370719889799753,
+      "val_se": 0.00286615783633524,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 1.0387739539146423,
+      "val_se": 0.0006710598472051723,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.9397050688664118,
+      "val_se": 0.0019220206632017298,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 1.0997695873181026,
+      "val_se": 0.0010480855255253266,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.9938291758298874,
+      "val_se": 0.00124870923925296,
+      "n_runs": 3
+    }
+  ],
+  "ETTh2": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.35702858741084736,
+      "val_se": 0.00021664773611000218,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.39028814310828847,
+      "val_se": 0.001937575223598293,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.3690898617108663,
+      "val_se": 0.0010513408427886997,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.4150344083706538,
+      "val_se": 0.00038806764727998257,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.3674087884525458,
+      "val_se": 0.0016693808157232095,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.4351528200010459,
+      "val_se": 0.0033715207649267095,
+      "n_runs": 3
+    }
+  ],
+  "ETTm1": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.6245613172650337,
+      "val_se": 0.0004386303896132861,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.5843801001707712,
+      "val_se": 0.002158470248636753,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.6143839284777641,
+      "val_se": 0.00022692587250574222,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.5784826278686523,
+      "val_se": 0.0012878353221521487,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.6124302595853806,
+      "val_se": 0.0001557605822323904,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.5813968380292257,
+      "val_se": 0.0003086802388915471,
+      "n_runs": 3
+    }
+  ],
+  "ETTm2": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.18325573081771532,
+      "val_se": 5.982686058270943e-05,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.19809115553895632,
+      "val_se": 0.003296069642338713,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.18359295961757502,
+      "val_se": 4.604909446423116e-05,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.2143894216666619,
+      "val_se": 0.007712544802316254,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.18316996408005556,
+      "val_se": 0.00010236124115154501,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.22850002845128378,
+      "val_se": 0.008337056536125213,
+      "n_runs": 3
+    }
+  ],
+  "ILI": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.24493801221251488,
+      "val_se": 0.0011568939327058253,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.24777253593007723,
+      "val_se": 0.0009247164611298634,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.23515268291036287,
+      "val_se": 0.002281189619369917,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.24024377018213272,
+      "val_se": 0.0030494882545630394,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.24075677866737047,
+      "val_se": 0.002584689922999683,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.2472637047370275,
+      "val_se": 0.004109955664972989,
+      "n_runs": 3
+    }
+  ],
+  "Exchange": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.45492074514428776,
+      "val_se": 0.0007080222521043308,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 1.2745116079847019,
+      "val_se": 0.005023333818753338,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.46339820077021915,
+      "val_se": 0.0013846233872962042,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 1.3317220881581306,
+      "val_se": 0.03269981649651193,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.4583478731413682,
+      "val_se": 0.0010653813325886597,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 1.521258329351743,
+      "val_se": 0.024043618517912275,
+      "n_runs": 3
+    }
+  ],
+  "Weather": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.5534797435005506,
+      "val_se": 0.00013749971335180066,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.5182922532161077,
+      "val_se": 0.00037469316339570067,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.5317693601051966,
+      "val_se": 3.2689464138455044e-05,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.5027753735582033,
+      "val_se": 9.578043585752537e-05,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.5109357188145319,
+      "val_se": 0.00012805832010089784,
+      "n_runs": 3
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.4768841564655304,
+      "val_se": 7.352341592833727e-05,
+      "n_runs": 3
+    }
+  ],
+  "Electricity": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.1452937936410308,
+      "val_se": 2.02106311917305e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.14161816239356995,
+      "val_se": 5.606934428215026e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.1438862532377243,
+      "val_se": 8.21426510810852e-07,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.13947616796940565,
+      "val_se": 1.1681579053401947e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.14403115306049585,
+      "val_se": 1.967232674360275e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.13955007307231426,
+      "val_se": 7.910653948783875e-06,
+      "n_runs": 2
+    }
+  ],
+  "Traffic": [
+    {
+      "n_regimes": 1,
+      "norm": "last",
+      "val_mean": 0.3573823720216751,
+      "val_se": 6.362795829772948e-06,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 1,
+      "norm": "none",
+      "val_mean": 0.36263496801257133,
+      "val_se": 8.158013224601746e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 2,
+      "norm": "last",
+      "val_mean": 0.35728488117456436,
+      "val_se": 2.7991831302642822e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 2,
+      "norm": "none",
+      "val_mean": 0.36263125389814377,
+      "val_se": 1.7799437046051025e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 3,
+      "norm": "last",
+      "val_mean": 0.3572634644806385,
+      "val_se": 5.612149834632873e-05,
+      "n_runs": 2
+    },
+    {
+      "n_regimes": 3,
+      "norm": "none",
+      "val_mean": 0.36294255033135414,
+      "val_se": 6.901845335960388e-05,
+      "n_runs": 2
+    }
+  ]
+}

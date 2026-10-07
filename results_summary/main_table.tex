@@ -1,0 +1,76 @@
+\begin{table*}[t]
+\centering
+\caption{Multivariate long-term forecasting results (mean$\pm$std over runs). All models are trained in the same code base with identical look-back windows, data splits and optimisation settings. FRLinear uses the configuration $(k, \text{norm})$ selected on the validation set. Best in bold, second best underlined.}
+\label{tab:main_results}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{c|c|cc|cc|cc}
+\toprule
+\multirow{2}{*}{Dataset} & \multirow{2}{*}{$H$} & \multicolumn{2}{c|}{NLinear} & \multicolumn{2}{c|}{DLinear} & \multicolumn{2}{c}{FRLinear (ours)} \\
+ & & MSE & MAE & MSE & MAE & MSE & MAE \\
+\midrule
+\multirow{5}{*}{\shortstack{ETTh1\\\scriptsize($k$=1, none)}} & 96 & \underline{0.375}{\scriptsize$\pm$0.002} & \textbf{0.396}{\scriptsize$\pm$0.001} & \textbf{0.373}{\scriptsize$\pm$0.003} & \textbf{0.396}{\scriptsize$\pm$0.005} & 0.376{\scriptsize$\pm$0.005} & \underline{0.399}{\scriptsize$\pm$0.006} \\
+ & 192 & \textbf{0.410}{\scriptsize$\pm$0.008} & \textbf{0.416}{\scriptsize$\pm$0.006} & \underline{0.412}{\scriptsize$\pm$0.009} & \underline{0.421}{\scriptsize$\pm$0.010} & \underline{0.412}{\scriptsize$\pm$0.006} & 0.422{\scriptsize$\pm$0.007} \\
+ & 336 & \textbf{0.431}{\scriptsize$\pm$0.002} & \textbf{0.429}{\scriptsize$\pm$0.002} & \underline{0.452}{\scriptsize$\pm$0.018} & \underline{0.452}{\scriptsize$\pm$0.017} & 0.465{\scriptsize$\pm$0.028} & 0.463{\scriptsize$\pm$0.025} \\
+ & 720 & \textbf{0.436}{\scriptsize$\pm$0.001} & \textbf{0.452}{\scriptsize$\pm$0.000} & \underline{0.495}{\scriptsize$\pm$0.025} & \underline{0.506}{\scriptsize$\pm$0.018} & 0.522{\scriptsize$\pm$0.036} & 0.525{\scriptsize$\pm$0.025} \\
+\cmidrule(lr){2-8}
+ & Avg & \textbf{0.413}{\scriptsize$\pm$0.002} & \textbf{0.423}{\scriptsize$\pm$0.002} & \underline{0.433}{\scriptsize$\pm$0.004} & \underline{0.444}{\scriptsize$\pm$0.003} & 0.444{\scriptsize$\pm$0.012} & 0.452{\scriptsize$\pm$0.009} \\
+\midrule
+\multirow{5}{*}{\shortstack{ETTh2\\\scriptsize($k$=1, last)}} & 96 & \underline{0.278}{\scriptsize$\pm$0.002} & \underline{0.338}{\scriptsize$\pm$0.001} & 0.295{\scriptsize$\pm$0.006} & 0.358{\scriptsize$\pm$0.006} & \textbf{0.273}{\scriptsize$\pm$0.000} & \textbf{0.336}{\scriptsize$\pm$0.000} \\
+ & 192 & \underline{0.356}{\scriptsize$\pm$0.023} & \underline{0.389}{\scriptsize$\pm$0.016} & 0.381{\scriptsize$\pm$0.006} & 0.415{\scriptsize$\pm$0.005} & \textbf{0.345}{\scriptsize$\pm$0.005} & \textbf{0.381}{\scriptsize$\pm$0.002} \\
+ & 336 & \underline{0.367}{\scriptsize$\pm$0.005} & \underline{0.406}{\scriptsize$\pm$0.003} & 0.458{\scriptsize$\pm$0.029} & 0.466{\scriptsize$\pm$0.016} & \textbf{0.366}{\scriptsize$\pm$0.002} & \textbf{0.404}{\scriptsize$\pm$0.002} \\
+ & 720 & \textbf{0.412}{\scriptsize$\pm$0.021} & \underline{0.446}{\scriptsize$\pm$0.013} & \underline{0.677}{\scriptsize$\pm$0.052} & 0.584{\scriptsize$\pm$0.023} & \textbf{0.412}{\scriptsize$\pm$0.018} & \textbf{0.444}{\scriptsize$\pm$0.008} \\
+\cmidrule(lr){2-8}
+ & Avg & \underline{0.353}{\scriptsize$\pm$0.010} & \underline{0.395}{\scriptsize$\pm$0.006} & 0.453{\scriptsize$\pm$0.018} & 0.456{\scriptsize$\pm$0.009} & \textbf{0.349}{\scriptsize$\pm$0.004} & \textbf{0.391}{\scriptsize$\pm$0.002} \\
+\midrule
+\multirow{5}{*}{\shortstack{ETTm1\\\scriptsize($k$=2, none)}} & 96 & 0.307{\scriptsize$\pm$0.003} & 0.349{\scriptsize$\pm$0.002} & \underline{0.302}{\scriptsize$\pm$0.000} & \underline{0.347}{\scriptsize$\pm$0.001} & \textbf{0.291}{\scriptsize$\pm$0.001} & \textbf{0.341}{\scriptsize$\pm$0.001} \\
+ & 192 & 0.345{\scriptsize$\pm$0.005} & 0.372{\scriptsize$\pm$0.004} & \underline{0.336}{\scriptsize$\pm$0.001} & \underline{0.366}{\scriptsize$\pm$0.002} & \textbf{0.332}{\scriptsize$\pm$0.001} & \textbf{0.365}{\scriptsize$\pm$0.001} \\
+ & 336 & 0.378{\scriptsize$\pm$0.003} & 0.391{\scriptsize$\pm$0.002} & \underline{0.372}{\scriptsize$\pm$0.002} & \underline{0.390}{\scriptsize$\pm$0.003} & \textbf{0.370}{\scriptsize$\pm$0.003} & \textbf{0.387}{\scriptsize$\pm$0.004} \\
+ & 720 & 0.438{\scriptsize$\pm$0.004} & 0.426{\scriptsize$\pm$0.004} & \textbf{0.428}{\scriptsize$\pm$0.005} & \textbf{0.424}{\scriptsize$\pm$0.006} & \underline{0.432}{\scriptsize$\pm$0.004} & \underline{0.425}{\scriptsize$\pm$0.003} \\
+\cmidrule(lr){2-8}
+ & Avg & 0.367{\scriptsize$\pm$0.002} & 0.384{\scriptsize$\pm$0.002} & \underline{0.360}{\scriptsize$\pm$0.002} & \underline{0.382}{\scriptsize$\pm$0.002} & \textbf{0.356}{\scriptsize$\pm$0.000} & \textbf{0.380}{\scriptsize$\pm$0.001} \\
+\midrule
+\multirow{5}{*}{\shortstack{ETTm2\\\scriptsize($k$=1, last)}} & 96 & \underline{0.167}{\scriptsize$\pm$0.003} & \underline{0.257}{\scriptsize$\pm$0.002} & 0.169{\scriptsize$\pm$0.003} & 0.262{\scriptsize$\pm$0.003} & \textbf{0.165}{\scriptsize$\pm$0.001} & \textbf{0.254}{\scriptsize$\pm$0.001} \\
+ & 192 & \underline{0.221}{\scriptsize$\pm$0.000} & \underline{0.293}{\scriptsize$\pm$0.000} & 0.234{\scriptsize$\pm$0.004} & 0.313{\scriptsize$\pm$0.005} & \textbf{0.220}{\scriptsize$\pm$0.000} & \textbf{0.291}{\scriptsize$\pm$0.000} \\
+ & 336 & \textbf{0.274}{\scriptsize$\pm$0.002} & \textbf{0.327}{\scriptsize$\pm$0.001} & \underline{0.301}{\scriptsize$\pm$0.010} & \underline{0.361}{\scriptsize$\pm$0.010} & \textbf{0.274}{\scriptsize$\pm$0.002} & \textbf{0.327}{\scriptsize$\pm$0.001} \\
+ & 720 & \textbf{0.368}{\scriptsize$\pm$0.001} & \underline{0.384}{\scriptsize$\pm$0.000} & \underline{0.429}{\scriptsize$\pm$0.054} & 0.438{\scriptsize$\pm$0.029} & \textbf{0.368}{\scriptsize$\pm$0.000} & \textbf{0.383}{\scriptsize$\pm$0.000} \\
+\cmidrule(lr){2-8}
+ & Avg & \underline{0.258}{\scriptsize$\pm$0.001} & \underline{0.315}{\scriptsize$\pm$0.001} & 0.283{\scriptsize$\pm$0.011} & 0.344{\scriptsize$\pm$0.006} & \textbf{0.257}{\scriptsize$\pm$0.000} & \textbf{0.314}{\scriptsize$\pm$0.000} \\
+\midrule
+\multirow{5}{*}{\shortstack{ILI\\\scriptsize($k$=2, last)}} & 24 & \underline{2.031}{\scriptsize$\pm$0.011} & \underline{0.931}{\scriptsize$\pm$0.006} & 2.208{\scriptsize$\pm$0.087} & 1.039{\scriptsize$\pm$0.035} & \textbf{2.028}{\scriptsize$\pm$0.089} & \textbf{0.911}{\scriptsize$\pm$0.038} \\
+ & 36 & \underline{2.020}{\scriptsize$\pm$0.069} & \underline{0.946}{\scriptsize$\pm$0.022} & 2.275{\scriptsize$\pm$0.020} & 1.066{\scriptsize$\pm$0.007} & \textbf{1.937}{\scriptsize$\pm$0.032} & \textbf{0.906}{\scriptsize$\pm$0.011} \\
+ & 48 & \underline{1.922}{\scriptsize$\pm$0.012} & \underline{0.932}{\scriptsize$\pm$0.003} & 2.282{\scriptsize$\pm$0.014} & 1.075{\scriptsize$\pm$0.003} & \textbf{1.878}{\scriptsize$\pm$0.024} & \textbf{0.900}{\scriptsize$\pm$0.007} \\
+ & 60 & \underline{1.982}{\scriptsize$\pm$0.057} & \underline{0.956}{\scriptsize$\pm$0.018} & 2.464{\scriptsize$\pm$0.059} & 1.126{\scriptsize$\pm$0.021} & \textbf{1.914}{\scriptsize$\pm$0.015} & \textbf{0.916}{\scriptsize$\pm$0.006} \\
+\cmidrule(lr){2-8}
+ & Avg & \underline{1.989}{\scriptsize$\pm$0.015} & \underline{0.941}{\scriptsize$\pm$0.005} & 2.307{\scriptsize$\pm$0.035} & 1.077{\scriptsize$\pm$0.014} & \textbf{1.939}{\scriptsize$\pm$0.017} & \textbf{0.908}{\scriptsize$\pm$0.009} \\
+\midrule
+\multirow{5}{*}{\shortstack{Exchange\\\scriptsize($k$=1, last)}} & 96 & 0.089{\scriptsize$\pm$0.002} & \underline{0.208}{\scriptsize$\pm$0.002} & \textbf{0.087}{\scriptsize$\pm$0.011} & 0.210{\scriptsize$\pm$0.009} & \underline{0.088}{\scriptsize$\pm$0.002} & \textbf{0.205}{\scriptsize$\pm$0.003} \\
+ & 192 & \underline{0.181}{\scriptsize$\pm$0.001} & \textbf{0.301}{\scriptsize$\pm$0.001} & \textbf{0.171}{\scriptsize$\pm$0.009} & \underline{0.308}{\scriptsize$\pm$0.012} & 0.182{\scriptsize$\pm$0.002} & \textbf{0.301}{\scriptsize$\pm$0.002} \\
+ & 336 & \textbf{0.331}{\scriptsize$\pm$0.006} & \textbf{0.416}{\scriptsize$\pm$0.005} & \underline{0.332}{\scriptsize$\pm$0.017} & 0.435{\scriptsize$\pm$0.013} & 0.337{\scriptsize$\pm$0.002} & \underline{0.419}{\scriptsize$\pm$0.002} \\
+ & 720 & \textbf{0.941}{\scriptsize$\pm$0.003} & \textbf{0.728}{\scriptsize$\pm$0.001} & \underline{0.942}{\scriptsize$\pm$0.056} & \underline{0.737}{\scriptsize$\pm$0.020} & 0.983{\scriptsize$\pm$0.008} & 0.745{\scriptsize$\pm$0.003} \\
+\cmidrule(lr){2-8}
+ & Avg & \underline{0.386}{\scriptsize$\pm$0.001} & \textbf{0.413}{\scriptsize$\pm$0.001} & \textbf{0.383}{\scriptsize$\pm$0.013} & 0.423{\scriptsize$\pm$0.004} & 0.397{\scriptsize$\pm$0.003} & \underline{0.418}{\scriptsize$\pm$0.002} \\
+\midrule
+\multirow{5}{*}{\shortstack{Weather\\\scriptsize($k$=3, none)}} & 96 & 0.180{\scriptsize$\pm$0.001} & \underline{0.231}{\scriptsize$\pm$0.001} & \underline{0.175}{\scriptsize$\pm$0.000} & 0.235{\scriptsize$\pm$0.001} & \textbf{0.152}{\scriptsize$\pm$0.001} & \textbf{0.217}{\scriptsize$\pm$0.001} \\
+ & 192 & 0.224{\scriptsize$\pm$0.001} & \underline{0.267}{\scriptsize$\pm$0.001} & \underline{0.217}{\scriptsize$\pm$0.002} & 0.275{\scriptsize$\pm$0.004} & \textbf{0.195}{\scriptsize$\pm$0.001} & \textbf{0.263}{\scriptsize$\pm$0.002} \\
+ & 336 & 0.270{\scriptsize$\pm$0.001} & \textbf{0.301}{\scriptsize$\pm$0.001} & \underline{0.264}{\scriptsize$\pm$0.003} & 0.316{\scriptsize$\pm$0.005} & \textbf{0.248}{\scriptsize$\pm$0.002} & \underline{0.310}{\scriptsize$\pm$0.002} \\
+ & 720 & 0.339{\scriptsize$\pm$0.000} & \textbf{0.348}{\scriptsize$\pm$0.000} & \underline{0.326}{\scriptsize$\pm$0.002} & \underline{0.366}{\scriptsize$\pm$0.003} & \textbf{0.321}{\scriptsize$\pm$0.001} & 0.368{\scriptsize$\pm$0.001} \\
+\cmidrule(lr){2-8}
+ & Avg & 0.253{\scriptsize$\pm$0.000} & \textbf{0.287}{\scriptsize$\pm$0.000} & \underline{0.245}{\scriptsize$\pm$0.001} & 0.298{\scriptsize$\pm$0.002} & \textbf{0.229}{\scriptsize$\pm$0.000} & \underline{0.289}{\scriptsize$\pm$0.000} \\
+\midrule
+\multirow{5}{*}{\shortstack{Electricity\\\scriptsize($k$=2, none)}} & 96 & 0.141{\scriptsize$\pm$0.000} & \underline{0.237}{\scriptsize$\pm$0.000} & \underline{0.140}{\scriptsize$\pm$0.000} & \underline{0.237}{\scriptsize$\pm$0.000} & \textbf{0.138}{\scriptsize$\pm$0.000} & \textbf{0.234}{\scriptsize$\pm$0.000} \\
+ & 192 & 0.155{\scriptsize$\pm$0.000} & \underline{0.249}{\scriptsize$\pm$0.000} & \underline{0.154}{\scriptsize$\pm$0.000} & 0.250{\scriptsize$\pm$0.000} & \textbf{0.152}{\scriptsize$\pm$0.000} & \textbf{0.247}{\scriptsize$\pm$0.000} \\
+ & 336 & 0.172{\scriptsize$\pm$0.000} & \textbf{0.265}{\scriptsize$\pm$0.000} & \underline{0.169}{\scriptsize$\pm$0.000} & \underline{0.268}{\scriptsize$\pm$0.000} & \textbf{0.167}{\scriptsize$\pm$0.000} & \textbf{0.265}{\scriptsize$\pm$0.000} \\
+ & 720 & 0.210{\scriptsize$\pm$0.000} & \textbf{0.298}{\scriptsize$\pm$0.000} & \underline{0.204}{\scriptsize$\pm$0.000} & 0.301{\scriptsize$\pm$0.000} & \textbf{0.202}{\scriptsize$\pm$0.000} & \underline{0.299}{\scriptsize$\pm$0.000} \\
+\cmidrule(lr){2-8}
+ & Avg & 0.170{\scriptsize$\pm$0.000} & \underline{0.262}{\scriptsize$\pm$0.000} & \underline{0.167}{\scriptsize$\pm$0.000} & 0.264{\scriptsize$\pm$0.000} & \textbf{0.165}{\scriptsize$\pm$0.000} & \textbf{0.261}{\scriptsize$\pm$0.000} \\
+\midrule
+\multirow{5}{*}{\shortstack{Traffic\\\scriptsize($k$=2, last)}} & 96 & \textbf{0.410}{\scriptsize$\pm$0.000} & \textbf{0.279}{\scriptsize$\pm$0.000} & \textbf{0.410}{\scriptsize$\pm$0.000} & \underline{0.282}{\scriptsize$\pm$0.000} & \textbf{0.410}{\scriptsize$\pm$0.000} & \textbf{0.279}{\scriptsize$\pm$0.000} \\
+ & 192 & \textbf{0.423}{\scriptsize$\pm$0.000} & \underline{0.284}{\scriptsize$\pm$0.000} & \textbf{0.423}{\scriptsize$\pm$0.000} & 0.288{\scriptsize$\pm$0.001} & \textbf{0.423}{\scriptsize$\pm$0.000} & \textbf{0.283}{\scriptsize$\pm$0.000} \\
+ & 336 & \textbf{0.436}{\scriptsize$\pm$0.000} & \textbf{0.290}{\scriptsize$\pm$0.000} & \textbf{0.436}{\scriptsize$\pm$0.000} & \underline{0.296}{\scriptsize$\pm$0.000} & \textbf{0.436}{\scriptsize$\pm$0.000} & \textbf{0.290}{\scriptsize$\pm$0.000} \\
+ & 720 & \textbf{0.464}{\scriptsize$\pm$0.000} & \textbf{0.307}{\scriptsize$\pm$0.000} & \underline{0.466}{\scriptsize$\pm$0.000} & \underline{0.315}{\scriptsize$\pm$0.000} & \textbf{0.464}{\scriptsize$\pm$0.000} & \textbf{0.307}{\scriptsize$\pm$0.000} \\
+\cmidrule(lr){2-8}
+ & Avg & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.290}{\scriptsize$\pm$0.000} & \underline{0.434}{\scriptsize$\pm$0.000} & \underline{0.295}{\scriptsize$\pm$0.000} & \textbf{0.433}{\scriptsize$\pm$0.000} & \textbf{0.290}{\scriptsize$\pm$0.000} \\
+\bottomrule
+\end{tabular}
+}
+\end{table*}

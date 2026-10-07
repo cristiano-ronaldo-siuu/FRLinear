@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Regime separability (training split) versus the configuration selected on validation and its test gain. $\Delta_{1}$: MSE change of FRLinear w.r.t.\ its $k{=}1$ variant; $\Delta_{D}$: w.r.t.\ DLinear (negative is better).}
+\label{tab:selection}
+\resizebox{\linewidth}{!}{
+\begin{tabular}{lrrrrrcrr}
+\toprule
+Dataset & $C$ & Season ratio & Trend ratio & Sil.$_{k=2}$ & Sil.$_{k=3}$ & Selected & $\Delta_{1}$ (\%) & $\Delta_{D}$ (\%) \\
+\midrule
+ETTh1 & 7 & 26.0 & 2.88 & 0.65 & 0.65 & $k$=1, none & 0.00 & 2.46 \\
+ETTh2 & 7 & 248.0 & 2.01 & 0.57 & 0.59 & $k$=1, last & 0.00 & -22.88 \\
+ETTm1 & 7 & 26.0 & 2.61 & 0.66 & 0.65 & $k$=2, none & -1.00 & -0.94 \\
+ETTm2 & 7 & 251.3 & 1.44 & 0.56 & 0.60 & $k$=1, last & 0.00 & -9.32 \\
+ILI & 7 & 3.4 & 3.77 & 0.46 & 0.35 & $k$=2, last & -0.23 & -15.95 \\
+Exchange & 8 & 150.7 & 1.08 & 0.48 & 0.40 & $k$=1, last & 0.00 & 3.70 \\
+Weather & 21 & 1962.9 & 90.60 & 0.53 & 0.68 & $k$=3, none & -6.59 & -6.67 \\
+Electricity & 321 & 257.9 & 6.67 & 0.53 & 0.62 & $k$=2, none & -1.11 & -1.25 \\
+Traffic & 862 & 18.3 & 7.81 & 0.47 & 0.38 & $k$=2, last & 0.01 & -0.11 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
